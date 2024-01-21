@@ -3,7 +3,6 @@ import * as controllers from "../controllers/index.js";
 
 const router = express.Router();
 
-router.get("/", controllers.wajikAnimeApi);
 router.get("/home", controllers.getHome);
 router.get("/ongoing", controllers.getOnGoing);
 router.get("/completed", controllers.getCompleted);
