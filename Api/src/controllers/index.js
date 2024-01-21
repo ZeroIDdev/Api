@@ -1,7 +1,7 @@
 import * as parser from "../parser/index.js";
 import { BASEURL, errorHandler } from "../helpers/index.js";
 
-export const wajikAnimeApi = (req, res) => {
+
 export const getHome = async (req, res) => {
    const { page } = req.query;
 
