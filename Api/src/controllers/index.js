@@ -2,28 +2,6 @@ import * as parser from "../parser/index.js";
 import { BASEURL, errorHandler } from "../helpers/index.js";
 
 export const wajikAnimeApi = (req, res) => {
-   return res.json({
-      source: BASEURL,
-      author: "wajik45",
-      message: "Ngopiiii.. ☕",
-      alert: "kemungkinan masih ada bug",
-      routes: {
-         home: "/home",
-         anime: "/anime",
-         movie: "/movie",
-         ongoing: "/ongoing",
-         completed: "/completed",
-         genreList: "/genre",
-         genre: "/genre/:slug",
-         search: "/search?query",
-         animeDetails: "/anime/:slug",
-         streamingAnime: "/anime/:slug/:episode",
-         streamingMovie: "/movie/:slug",
-         more: "https://github.com/wajik45/wajik-anime-api",
-      },
-   });
-};
-
 export const getHome = async (req, res) => {
    const { page } = req.query;
 
